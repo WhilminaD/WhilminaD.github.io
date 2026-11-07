@@ -1,0 +1,426 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Media Kit &amp; Rates — Whilmina Dsouza</title>
+<meta name="description" content="Media kit and rate card for Whilmina Dsouza, Toronto lifestyle and UGC creator: audience, Reels and post packages, add-ons and how to book.">
+<link rel="icon" href="data:,">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,500;0,600;0,700;1,500&family=Public+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+  :root{
+    color-scheme: light dark;
+    --bg:#FAF6F0;
+    --bg-alt:#F2EAE0;
+    --surface:#FFFFFF;
+    --ink:#292420;
+    --ink-soft:#5C554D;
+    --line:#E3D9CB;
+    --accent:#B4552D;
+    --accent-strong:#96431F;
+    --accent-tint:#F6E3D5;
+    --skeleton:#EAE0D2;
+    --shadow:0 10px 30px rgba(41,32,24,.08);
+  }
+  @media (prefers-color-scheme: dark){
+    :root{
+      --bg:#1D1915;
+      --bg-alt:#262019;
+      --surface:#2B241C;
+      --ink:#F3EDE4;
+      --ink-soft:#C4B8A6;
+      --line:#453A2E;
+      --accent:#E08A5C;
+      --accent-strong:#EEA87F;
+      --accent-tint:#3A2A1E;
+      --skeleton:#332A20;
+      --shadow:0 10px 30px rgba(0,0,0,.35);
+    }
+  }
+  *{margin:0;padding:0;box-sizing:border-box}
+  html{scroll-behavior:smooth}
+  body{
+    font-family:"Public Sans",system-ui,-apple-system,sans-serif;
+    background:var(--bg);
+    color:var(--ink);
+    line-height:1.6;
+    font-size:16.5px;
+    -webkit-font-smoothing:antialiased;
+  }
+  h1,h2,h3,.serif{font-family:"Playfair Display",Georgia,serif;font-weight:600;line-height:1.15}
+  a{color:var(--accent);text-decoration:none}
+  a:hover{text-decoration:underline}
+  .wrap{max-width:1120px;margin:0 auto;padding:0 24px}
+
+  /* ---------- Nav ---------- */
+  .nav{
+    position:sticky;top:0;z-index:50;
+    background:color-mix(in srgb, var(--bg) 88%, transparent);
+    backdrop-filter:blur(10px);-webkit-backdrop-filter:blur(10px);
+    border-bottom:1px solid var(--line);
+  }
+  .nav-inner{display:flex;align-items:center;justify-content:space-between;gap:16px;padding:14px 0}
+  .nav-name{font-family:"Playfair Display",Georgia,serif;font-weight:700;font-size:1.15rem;color:var(--ink);letter-spacing:.01em}
+  .nav-name:hover{text-decoration:none}
+  .nav-links{display:flex;align-items:center;gap:26px;font-size:.92rem;font-weight:500}
+  .nav-links a{color:var(--ink-soft)}
+  .nav-links a:hover{color:var(--accent);text-decoration:none}
+  .nav-cta{
+    background:var(--accent);color:#FFF7F0 !important;padding:9px 18px;border-radius:999px;font-weight:600;
+  }
+  .nav-cta:hover{background:var(--accent-strong)}
+  @media (max-width:640px){ .nav-links a:not(.nav-cta){display:none} }
+
+  /* ---------- Hero ---------- */
+  .hero{padding:64px 0 8px}
+  .hero-grid{display:grid;grid-template-columns:1.55fr 1fr;gap:48px;align-items:center}
+  @media (max-width:820px){ .hero-grid{grid-template-columns:1fr;gap:32px} }
+  .hero-loc{
+    display:inline-flex;align-items:center;gap:8px;
+    font-size:.82rem;font-weight:600;letter-spacing:.14em;text-transform:uppercase;color:var(--accent);
+    margin-bottom:18px;
+  }
+  .hero-loc::before{content:"";width:26px;height:1.5px;background:var(--accent);display:inline-block}
+  .hero h1{font-size:clamp(2.5rem,5.4vw,3.9rem);margin-bottom:6px}
+  .hero-role{font-family:"Playfair Display",Georgia,serif;font-style:italic;font-weight:500;font-size:clamp(1.25rem,2.6vw,1.6rem);color:var(--accent);margin-bottom:20px}
+  .hero p.lede{font-size:1.08rem;color:var(--ink-soft);max-width:34rem;margin-bottom:28px}
+  .hero p.lede strong{color:var(--ink);font-weight:600}
+  .hero-actions{display:flex;flex-wrap:wrap;gap:12px}
+  .btn{
+    display:inline-block;padding:13px 26px;border-radius:999px;font-weight:600;font-size:.98rem;
+    border:1.5px solid var(--accent);transition:background .15s ease,color .15s ease;
+  }
+  .btn:hover{text-decoration:none}
+  .btn-solid{background:var(--accent);color:#FFF7F0}
+  .btn-solid:hover{background:var(--accent-strong);border-color:var(--accent-strong)}
+  .btn-ghost{color:var(--accent);background:transparent}
+  .btn-ghost:hover{background:var(--accent-tint)}
+  .hero-photo{display:flex;justify-content:center}
+  .hero-photo figure{
+    width:min(300px,72vw);aspect-ratio:4/5;border-radius:160px 160px 14px 14px;overflow:hidden;
+    border:6px solid var(--surface);box-shadow:var(--shadow);background:var(--skeleton);
+  }
+  .hero-photo img{width:100%;height:100%;object-fit:cover;display:block}
+
+  /* ---------- Stats ---------- */
+  .stats{margin:52px 0 0;border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
+  .stats-grid{display:grid;grid-template-columns:repeat(4,1fr)}
+  @media (max-width:820px){ .stats-grid{grid-template-columns:repeat(2,1fr)} }
+  .stat{padding:26px 18px;text-align:center}
+  .stat + .stat{border-left:1px solid var(--line)}
+  @media (max-width:820px){
+    .stat:nth-child(3){border-left:none}
+    .stat:nth-child(n+3){border-top:1px solid var(--line)}
+  }
+  .stat-num{font-family:"Playfair Display",Georgia,serif;font-size:2rem;font-weight:700;color:var(--ink)}
+  .stat-label{font-size:.85rem;color:var(--ink-soft);margin-top:2px}
+  .stats-note{text-align:center;font-size:.8rem;color:var(--ink-soft);padding:0 0 16px}
+
+  /* ---------- Sections ---------- */
+  section{padding:72px 0 8px}
+  .section-head{max-width:44rem;margin-bottom:34px}
+  .section-head h2{font-size:clamp(1.8rem,3.6vw,2.4rem);margin-bottom:10px}
+  .section-head p{color:var(--ink-soft)}
+  .rule{width:56px;height:3px;background:var(--accent);border-radius:2px;margin-bottom:18px}
+
+  /* Approach */
+  .pillars{display:grid;grid-template-columns:repeat(2,1fr);gap:20px}
+  @media (max-width:720px){ .pillars{grid-template-columns:1fr} }
+  .pillar{background:var(--surface);border:1px solid var(--line);border-radius:10px;padding:28px;box-shadow:var(--shadow)}
+  .pillar h3{font-size:1.25rem;margin-bottom:8px}
+  .pillar p{color:var(--ink-soft);font-size:.97rem}
+  .pillar .num{
+    font-family:"Playfair Display",Georgia,serif;font-style:italic;color:var(--accent);
+    font-size:1rem;display:block;margin-bottom:10px;
+  }
+  .belief{
+    margin-top:30px;background:var(--bg-alt);border-radius:10px;padding:30px 32px;text-align:center;
+  }
+  .belief p{font-family:"Playfair Display",Georgia,serif;font-style:italic;font-size:clamp(1.15rem,2.4vw,1.4rem);max-width:40rem;margin:0 auto}
+
+  /* Partners */
+  .partners{display:flex;flex-wrap:wrap;gap:12px}
+  .partner{
+    border:1px solid var(--line);background:var(--surface);border-radius:999px;
+    padding:10px 22px;font-weight:600;font-size:.95rem;color:var(--ink);
+  }
+  .partner small{display:block;font-weight:400;font-size:.76rem;color:var(--ink-soft);letter-spacing:.02em}
+
+  /* ---------- Work / embeds ---------- */
+  .work-cat{margin-top:44px}
+  .work-cat:first-of-type{margin-top:6px}
+  .work-cat-head{display:flex;align-items:baseline;gap:14px;margin-bottom:18px;flex-wrap:wrap}
+  .work-cat-head h3{font-size:1.45rem}
+  .work-cat-head span{color:var(--ink-soft);font-size:.92rem}
+  .video-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:22px}
+  @media (max-width:900px){ .video-grid{grid-template-columns:repeat(2,1fr)} }
+  @media (max-width:560px){ .video-grid{grid-template-columns:1fr} }
+  .video-card{display:flex;flex-direction:column;gap:10px}
+  .embed-card{
+    position:relative;width:100%;height:600px;max-height:80vh;border-radius:12px;overflow:hidden;
+    background:var(--skeleton);border:1px solid var(--line);
+    display:flex;align-items:center;justify-content:center;
+  }
+  .embed-card iframe{position:absolute;inset:0;width:100%;height:100%;border:0;display:block}
+  .embed-fallback{
+    position:relative;z-index:0;text-align:center;padding:24px;color:var(--ink-soft);font-size:.92rem;
+  }
+  .embed-fallback .play{
+    width:58px;height:58px;border-radius:50%;background:var(--accent);color:#FFF7F0;
+    display:flex;align-items:center;justify-content:center;margin:0 auto 12px;
+  }
+  .embed-fallback .play svg{width:22px;height:22px;margin-left:3px;fill:currentColor}
+  .video-meta{display:flex;flex-direction:column;gap:1px;padding:0 2px}
+  .video-title{font-weight:600;font-size:.98rem}
+  .video-sub{color:var(--ink-soft);font-size:.85rem}
+  .video-link{font-size:.85rem;font-weight:600}
+  .player-card{
+    position:relative;width:100%;height:600px;max-height:80vh;border-radius:12px;overflow:hidden;
+    background:#14100D;border:1px solid var(--line);
+  }
+  .player-card video{width:100%;height:100%;object-fit:cover;display:block}
+
+  /* Services */
+  .services-grid{display:grid;grid-template-columns:1.1fr 1fr;gap:40px;align-items:start}
+  @media (max-width:820px){ .services-grid{grid-template-columns:1fr} }
+  .service-list{list-style:none}
+  .service-list li{
+    padding:13px 0;border-bottom:1px solid var(--line);display:flex;gap:12px;align-items:baseline;font-size:1rem;
+  }
+  .service-list li::before{content:"";width:7px;height:7px;border-radius:50%;background:var(--accent);flex:none;position:relative;top:-2px}
+  .service-note{background:var(--bg-alt);border-radius:10px;padding:26px 28px}
+  .service-note h3{font-size:1.2rem;margin-bottom:8px}
+  .service-note p{color:var(--ink-soft);font-size:.96rem}
+
+  /* Process */
+  .steps{display:grid;grid-template-columns:repeat(4,1fr);gap:20px}
+  @media (max-width:900px){ .steps{grid-template-columns:repeat(2,1fr)} }
+  @media (max-width:520px){ .steps{grid-template-columns:1fr} }
+  .step{background:var(--surface);border:1px solid var(--line);border-radius:10px;padding:24px;box-shadow:var(--shadow)}
+  .step .n{
+    font-family:"Playfair Display",Georgia,serif;font-size:1.9rem;font-weight:700;color:var(--accent);display:block;margin-bottom:8px;
+  }
+  .step h3{font-size:1.08rem;margin-bottom:6px;font-family:"Public Sans",sans-serif;font-weight:700}
+  .step p{color:var(--ink-soft);font-size:.92rem}
+
+  /* Contact */
+  .contact{
+    margin:72px 0 0;background:var(--bg-alt);border-top:1px solid var(--line);
+    padding:64px 0 70px;text-align:center;
+  }
+  .contact h2{font-size:clamp(1.9rem,4vw,2.6rem);margin-bottom:12px}
+  .contact p{color:var(--ink-soft);max-width:34rem;margin:0 auto 28px}
+  .contact-row{display:flex;flex-wrap:wrap;gap:12px;justify-content:center}
+  footer{padding:26px 0 34px;text-align:center;color:var(--ink-soft);font-size:.85rem}
+  footer a{color:var(--ink-soft);text-decoration:underline}
+
+  /* ---------- Media kit additions ---------- */
+  .trio{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}
+  @media (max-width:820px){ .trio{grid-template-columns:1fr} }
+  .rates{display:grid;grid-template-columns:repeat(2,1fr);gap:20px}
+  @media (max-width:720px){ .rates{grid-template-columns:1fr} }
+  .rate{background:var(--surface);border:1px solid var(--line);border-radius:10px;padding:28px;box-shadow:var(--shadow);display:flex;flex-direction:column}
+  .rate .tag{font-size:.78rem;font-weight:600;letter-spacing:.14em;text-transform:uppercase;color:var(--accent);margin-bottom:8px}
+  .rate h3{font-size:1.3rem;margin-bottom:4px}
+  .rate .price{font-family:"Playfair Display",Georgia,serif;font-size:2.3rem;font-weight:700;color:var(--ink);margin:6px 0 14px}
+  .rate .price small{font-family:"Public Sans",system-ui,sans-serif;font-size:.85rem;font-weight:500;color:var(--ink-soft);margin-left:6px}
+  .rate .service-list li{padding:9px 0;font-size:.96rem}
+  .rate .service-list li:last-child{border-bottom:none}
+  .rate.hl{border-color:var(--accent)}
+  .addon-price{margin-left:auto;font-weight:600;color:var(--ink);white-space:nowrap;padding-left:12px}
+  .service-list.addons li{align-items:baseline}
+  .rates-note{margin-top:22px;font-size:.9rem;color:var(--ink-soft);max-width:44rem}
+  .prose p{color:var(--ink-soft);max-width:44rem;margin-bottom:14px}
+</style>
+</head>
+<body>
+
+<header class="nav">
+  <div class="wrap nav-inner">
+    <a class="nav-name" href="../">Whilmina Dsouza</a>
+    <nav class="nav-links">
+      <a href="../">Portfolio</a>
+      <a href="#audience">Audience</a>
+      <a href="#rates">Rates</a>
+      <a href="#addons">Add-ons</a>
+      <a class="nav-cta" href="#contact">Work with me</a>
+    </nav>
+  </div>
+</header>
+
+<main id="top">
+
+  <div class="wrap hero">
+    <div class="hero-grid">
+      <div>
+        <span class="hero-loc">Media kit &amp; rate card</span>
+        <h1>Whilmina Dsouza</h1>
+        <p class="hero-role">Why Partner With Me?</p>
+        <p class="lede">I specialize in <strong>scroll-stopping Reels with strong visual hooks</strong> that capture attention, ensuring my trusted community sees and engages with your brand.</p>
+        <div class="hero-actions">
+          <a class="btn btn-solid" href="mailto:collabwhilmina@gmail.com">collabwhilmina@gmail.com</a>
+          <a class="btn btn-ghost" href="../#work">See my work</a>
+        </div>
+      </div>
+      <div class="hero-photo">
+        <figure>
+          <img src="../media/whilmina-portrait.jpg" alt="Portrait of Whilmina Dsouza" width="240" height="240">
+        </figure>
+      </div>
+    </div>
+
+    <div class="stats">
+      <div class="stats-grid">
+        <div class="stat">
+          <div class="stat-num">891K</div>
+          <div class="stat-label">Views in the last 30 days</div>
+        </div>
+        <div class="stat">
+          <div class="stat-num">643K</div>
+          <div class="stat-label">Accounts reached in 30 days</div>
+        </div>
+        <div class="stat">
+          <div class="stat-num">4.6K</div>
+          <div class="stat-label">Followers on @whilmina</div>
+        </div>
+        <div class="stat">
+          <div class="stat-num">Toronto</div>
+          <div class="stat-label">Top audience city</div>
+        </div>
+      </div>
+      <p class="stats-note">Instagram insights, last 30 days · November 2026</p>
+    </div>
+  </div>
+
+  <section id="audience">
+    <div class="wrap">
+      <div class="section-head">
+        <div class="rule"></div>
+        <h2>My audience</h2>
+        <p>I am committed to creating content that not only meets but exceeds your brand's expectations, driving real engagement and measurable results.</p>
+      </div>
+      <div class="trio">
+        <div class="pillar">
+          <span class="num">Age</span>
+          <h3>25–45</h3>
+          <p>Core audience age range.</p>
+        </div>
+        <div class="pillar">
+          <span class="num">Location</span>
+          <h3>Canada, USA, India</h3>
+          <p>Toronto is my top audience city.</p>
+        </div>
+        <div class="pillar">
+          <span class="num">Interests</span>
+          <h3>Travel, Lifestyle, Wellness, Pet</h3>
+          <p>What my content is built around.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="rates">
+    <div class="wrap">
+      <div class="section-head">
+        <div class="rule"></div>
+        <h2>Services &amp; packages</h2>
+        <p>Clear pricing up front, in Canadian dollars. Reels are my specialty.</p>
+      </div>
+      <div class="rates">
+        <div class="rate hl">
+          <span class="tag">Reels content · my specialty</span>
+          <h3>Single Reel</h3>
+          <div class="price">$300<small>CAD</small></div>
+          <ul class="service-list">
+            <li>Custom concept development &amp; scripting</li>
+            <li>Professional filming &amp; editing</li>
+            <li>Trending audio &amp; effects</li>
+            <li>Caption with call to action</li>
+            <li>1–2 week turnaround</li>
+            <li>1 revision included</li>
+          </ul>
+        </div>
+        <div class="rate hl">
+          <span class="tag">Reels content · my specialty</span>
+          <h3>Reel Package (3 Reels)</h3>
+          <div class="price">$800<small>CAD</small></div>
+          <ul class="service-list">
+            <li>Everything from the single reel package</li>
+            <li>Staggered posting schedule</li>
+            <li>2–3 week turnaround</li>
+            <li>2 revisions per reel</li>
+            <li>Direct DM message outreach to your audience with the links</li>
+          </ul>
+        </div>
+        <div class="rate">
+          <span class="tag">Instagram posts</span>
+          <h3>Single Post</h3>
+          <div class="price">$100<small>CAD</small></div>
+          <ul class="service-list">
+            <li>Professional photography or graphics</li>
+            <li>Caption creation</li>
+            <li>Hashtag research</li>
+            <li>1-week turnaround</li>
+            <li>1 revision included</li>
+          </ul>
+        </div>
+        <div class="rate">
+          <span class="tag">Instagram posts</span>
+          <h3>Post Package (3 Posts)</h3>
+          <div class="price">$250<small>CAD</small></div>
+          <ul class="service-list">
+            <li>Strategic posting schedule</li>
+            <li>1–2 week turnaround</li>
+            <li>1 revision per post</li>
+          </ul>
+        </div>
+      </div>
+      <p class="rates-note">Rates are based on my reach, with an average of 50K views per post, mostly from non-followers, and 100K+ view averages on top content.</p>
+    </div>
+  </section>
+
+  <section id="addons">
+    <div class="wrap">
+      <div class="section-head">
+        <div class="rule"></div>
+        <h2>Add-ons &amp; custom packages</h2>
+        <p>Looking for something more specific? I offer flexible options to suit your campaign needs.</p>
+      </div>
+      <div class="services-grid">
+        <ul class="service-list addons">
+          <li>Ad rights <span class="addon-price">+$250 CAD</span></li>
+          <li>Rush fee (24–48 hours) <span class="addon-price">+25% of service cost</span></li>
+          <li>Extended usage rights <span class="addon-price">+30–50%</span></li>
+        </ul>
+        <div class="service-note">
+          <h3>Custom quotes</h3>
+          <p>Prices may vary based on the scope of work, exclusivity and required deliverables. Custom packages are designed to align with your unique marketing objectives.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <div class="contact" id="contact">
+    <div class="wrap">
+      <h2 class="serif">Let's create something amazing together!</h2>
+      <p>I'm excited about the possibility of working with you and bringing your brand to life for my audience. For custom quotes or to discuss your campaign in detail, reach out below. I look forward to hearing from you!</p>
+      <div class="contact-row">
+        <a class="btn btn-solid" href="mailto:collabwhilmina@gmail.com">Email collabwhilmina@gmail.com</a>
+        <a class="btn btn-ghost" href="https://www.instagram.com/whilmina/" target="_blank" rel="noopener">DM @whilmina on Instagram</a>
+        <a class="btn btn-ghost" href="../">See my portfolio</a>
+      </div>
+    </div>
+  </div>
+
+</main>
+
+<footer>
+  <div class="wrap">
+    Whilmina Dsouza · Toronto, Canada · <a href="mailto:collabwhilmina@gmail.com">collabwhilmina@gmail.com</a>
+  </div>
+</footer>
+
+</body>
+</html>
